@@ -15,10 +15,9 @@ while True:
     print(data)
     i=i+1
     if i>5:
-#      print("k="+str(k))
       break;
     th = threading.Thread(target=read_serial, args=(sys.argv[1],sys.argv[2],q),daemon=True)
     th.start()
     print("start thread: "+str(i))
-#  k=k+1
+
 exit()
